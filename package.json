@@ -2,6 +2,7 @@
   "name": "react-pwa-sample",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://oleh8978.github.io/react-pwa-template-main/",
   "dependencies": {
     "@sentry/react": "^6.2.2",
     "@testing-library/jest-dom": "^5.11.4",
@@ -43,7 +44,9 @@
     "lint-check": "eslint 'src/**/*.{ts,tsx,js}'",
     "lint": "eslint 'src/**/*.{ts,tsx,js}' --fix --format table",
     "analyze": "source-map-explorer 'build/static/js/*.js'",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
